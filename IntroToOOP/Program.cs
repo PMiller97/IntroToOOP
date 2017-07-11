@@ -29,14 +29,46 @@ namespace IntroToOOP
             //Console.WriteLine(secondCat.Age);
             //secondCat.Eat();
 
-            Dog firstDog = new Dog("long", 3.4, 55, 75);
-            Console.WriteLine("{0} {1} {2} {3}", firstDog.Length, firstDog.Height, firstDog.Speed, firstDog.Weight);
+            //Dog firstDog = new Dog("long", 3.4, 55, 75);
+            //Console.WriteLine("{0} {1} {2} {3}", firstDog.Length, firstDog.Height, firstDog.Speed, firstDog.Weight);
 
             //To create a new object, we use a special method called a CONSTRUCTOR
 
             //Thinking about objects in real life, create (either hand-write or type)
             //three examples of objects. Your objects should have five states (characteristics)
             //and five behaviors.
+
+
+            //Superhero firstHero = new Superhero();
+            //firstHero.StrengthLevel = 100;
+            //firstHero.HasCape = true;
+
+            //firstHero.BattleNemesis();
+            //Console.WriteLine(firstHero.HasCape);
+            //Console.WriteLine(firstHero.StrengthLevel);
+
+            //firstHero.BattleNemesis();
+            //Console.WriteLine(firstHero.HasCape);
+            //Console.WriteLine(firstHero.StrengthLevel);
+
+
+            //Superhero secondHero = new Superhero("Diamond Daniel");
+            //Console.WriteLine(secondHero.StrengthLevel);
+
+            //secondHero.AllyGained();
+            //Console.WriteLine(secondHero.StrengthLevel);
+
+
+            Superhero thirdHero = new Superhero("black Kevlar body armour", "The Best Ever", 1000, "Being the Best", false);
+            thirdHero.BattleNemesis();
+            Console.WriteLine("Oh no! Now my cosbgtume is " + thirdHero.Costume);
+            Console.WriteLine("And my strength has diminished to " + thirdHero.StrengthLevel);
+
+            
+
+
+
+
         }
     }
 }

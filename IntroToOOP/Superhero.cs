@@ -50,7 +50,7 @@ namespace IntroToOOP
             //this is my default constructor
         }
 
-        public Superhero(string name, int strengthLevel)
+        public Superhero(string name)
         {
             this.name = name;
             this.strengthLevel = 100;
@@ -66,7 +66,26 @@ namespace IntroToOOP
         }
 
 
-
         //2 Methods
+        public void BattleNemesis()
+        {
+            this.StrengthLevel -= 10;
+            this.HasCape = false;
+            this.Costume = "tattered";
+        }
+
+        public void GetHealthy(string costume, int strengthLevel)
+        {
+            this.Costume = costume;
+            this.StrengthLevel = strengthLevel;
+        }
+
+        public void AllyGained()
+        {
+            this.StrengthLevel += 10;
+            this.HasCape = false;
+            Console.WriteLine("Thank you for being a friend!");
+        }
+
     }
 }
