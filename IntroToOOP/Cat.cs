@@ -9,16 +9,20 @@ namespace IntroToOOP
     class Cat
     {
         //Inside our class, we create a blueprint for our object.
-        //Classes are tmeplates in OOP that we use to create objects.
+        //Classes are templates in OOP that we use to create objects.
         //They should always be named in Pascal Case.
 
         //In OOP, there are two types of States:
         //Fields - variables that belong to a class
         //fields are typically private
+        //use camel case
         private string name;
         private int age;
         private string furColor;
         private bool isHungry = true;
+
+        //private = lowercase 
+        //public = uppercase
 
 
         //Properties - a sort of mix between a field and a method that allow controlled access
@@ -26,6 +30,10 @@ namespace IntroToOOP
         {
             get { return this.name; }
             set { this.name = value; }
+        }
+        public int Age
+        {
+            get { return this.age; }
         }
 
         //We also have Behaviors:
@@ -39,12 +47,16 @@ namespace IntroToOOP
             //this is an example of a default constructor. A default constructor takes no arguements/parameters.
         }
 
+        //Can have as many consructors as you need as long as they each hvae a unique signature.
+        //By signature, I mean the parameters in the parentheses after the constructor name.
+
         public Cat(string name, int age, string furColor)
         {
             this.name = name;
             this.age = age;
             this.furColor = furColor;
         }
+        //Overloading
 
         public void Eat()
         {
