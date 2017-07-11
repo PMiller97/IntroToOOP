@@ -16,7 +16,7 @@ namespace IntroToOOP
         private double height;
         private int speed;
         private int weight;
-        private bool crap;
+        private bool crap = true;
 
         //Properties
         public string Length
@@ -44,12 +44,13 @@ namespace IntroToOOP
             //This is my default constructor
         }
 
-        public Dog(string length, double height, int speed, int weight)
+        public Dog(string length, double height, int speed, int weight, bool crap)
         {
             this.length = length; 
             this.height = height;
             this.speed = speed;
             this.weight = weight;
+            this.crap = crap;
         }
 
         public int Run()
