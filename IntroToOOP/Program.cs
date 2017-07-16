@@ -11,7 +11,7 @@ namespace IntroToOOP
         static void Main(string[] args)
         {
             //When we initalize a new object, it is called INSTANTIATING (creating a new instance
-            //An object needs to be instantiated befoe it can be used
+            //An object needs to be instantiated before it can be used
             //All objects of a specific type are created from the same template - CLASS
             //All objects from a class will have the same number and type of states, BUT...
             //each instance can have its own unique value.
@@ -61,7 +61,7 @@ namespace IntroToOOP
 
             Superhero thirdHero = new Superhero("black Kevlar body armour", "The Best Ever", 1000, "Being the Best", false);
             thirdHero.BattleNemesis();
-            Console.WriteLine("Oh no! Now my cosbgtume is " + thirdHero.Costume);
+            Console.WriteLine("Oh no! Now my costume is " + thirdHero.Costume);
             Console.WriteLine("And my strength has diminished to " + thirdHero.StrengthLevel);
 
             
